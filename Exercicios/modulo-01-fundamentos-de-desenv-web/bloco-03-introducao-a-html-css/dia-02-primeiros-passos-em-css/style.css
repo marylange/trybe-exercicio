@@ -1,0 +1,38 @@
+h1 {
+  font-size: 65px;
+  color: orange;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+li {
+  background-color:yellow;
+  line-height: 40px;
+}
+
+.colored-block {
+  background-color:pink;
+}
+
+p {
+  font-weight: 600;
+  font-size: 3em;
+}
+
+body {
+  font-size: 16px;
+  font-style: serif;
+  color: #008CBA;
+}
+
+#amarelo {
+  background-color: yellow;
+}
+
+#vermelho {
+  background-color: red;
+}
+
+#marrom {
+  background-color: brown;
+}
