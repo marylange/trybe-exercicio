@@ -36,6 +36,7 @@
   border-color: red;
   margin-top: 10px;
   width: 30%;
+  display: inline-block;
 }
 
 .side-bar {
