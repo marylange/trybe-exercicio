@@ -4,7 +4,7 @@ Acesse as chaves name , lastName e age e concatene as suas informações para im
 
 
 let player = {
-  name: 'Mart
+  name: 'Marta',
   lastName: 'Silva',
   age: 34,
   medals: {
