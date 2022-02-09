@@ -23,11 +23,11 @@ switch (sinalTransito) {
 
 */
 
-let nota;
+// let nota;
 
-switch (nota) {
-  case 1
-}
+// switch (nota) {
+//   case 1
+// }
 
 // if (notaPessoaCandidata >= 80) {
 //   console.log("Parabéns, você foi aprovada(o)!");
