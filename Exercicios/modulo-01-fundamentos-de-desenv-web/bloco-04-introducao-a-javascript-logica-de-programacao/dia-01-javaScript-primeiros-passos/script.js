@@ -1,4 +1,4 @@
-// exercício 01
+// variáveis
 const myName = "Marylange";
 
 // let birthCity = "Maranguape"; // let permite modificações e const não
