@@ -1,0 +1,51 @@
+.title-container h1 {
+  background-color: salmon;
+  padding: 20px;
+  border-style: solid;
+  border-color: red;
+}
+
+.nav {
+  background-color: aqua;
+  padding: 20px;
+  border-style: solid;
+  border-color: red;
+  margin-top: 10px;
+}
+
+.main-content {
+  background-color: darkgoldenrod;
+  padding: 20px;
+  border-style: solid;
+  border-color: red;
+  margin-top: 10px;
+}
+
+.article {
+  background-color: yellow;
+  padding: 20px;
+  border-style: solid;
+  border-color: red;
+  margin-top: 10px;
+}
+
+.small-content {
+  background-color: gray;
+  padding: 20px;
+  border-style: solid;
+  border-color: red;
+  margin-top: 10px;
+  width: 30%;
+  display: inline-block;
+}
+
+.side-bar {
+  background-color: ghostwhite;
+  padding: 20px;
+  border-style: solid;
+  border-color: red;
+  margin-top: 10px;
+  display: inline-block;
+  width:200px;
+  vertical-align: top;
+}
