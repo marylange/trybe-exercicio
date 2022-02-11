@@ -57,9 +57,12 @@
   </head>
   <body>
     <script>
+      /* parte 1 */
+
       /* 1 */
       let tagBody = document.querySelector('body');
-      let tagH1 = document.createElement('h1').innerText = 'Exercício 5.2 - JavaScript DOM';
+      let tagH1 = document.createElement('h1');
+      tagH1.innerText = 'Exercício 5.2 - JavaScript DOM';
       tagBody.appendChild(tagH1);
 
       /* 2 */
@@ -70,6 +73,7 @@
       /* 3 */
       let mainClass = document.getElementsByClassName('main-content');
       let tagSection = document.createElement('section');
+      tagSection.className = "center-content";
       tagMain.appendChild(tagSection);
 
       /* 4 */
@@ -91,7 +95,7 @@
       let tagImg = document.createElement('img');
       tagImg.src = "https://picsum.photos/200";
       tagImg.className = "small-image";
-      let recieveSection2 = document.getElementsByClassName('left-content');
+      let recieveSection2 = document.querySelector('.left-content');
       recieveSection2.appendChild(tagImg);
 
       /* 8 */
@@ -99,9 +103,11 @@
 
       let tagUl = document.createElement('ul');
       tagSection3.appendChild(tagUl);
+
       for(let index = 0; index < numerosPorExtenso.length; index += 1) {
         let numero = numerosPorExtenso[index];
         let tagLi = document.createElement('li');
+        tagLi.className = 'itens-lista-numeros-extenso';
         tagLi.innerText = numero;
 
         tagUl.appendChild(tagLi);
@@ -113,8 +119,35 @@
         tagMain.appendChild(tagH3);
       };
 
-      console.log(tagBody);
+      /* parte 2 */
 
+      /* 1 */
+      tagH1.className = 'title';
+
+      /* 2 */
+      let recuperandoAtagH3 = document.getElementsByTagName('h3');
+      recuperandoAtagH3.className = 'description';
+
+      /* 3 */
+      tagMain.removeChild(tagSection2);
+
+      /* 4 */
+      tagSection3.style.marginRight = 'auto';
+
+      /* 5 */
+      tagSection.style.backgroundColor = 'green';
+
+      /* 6 */
+      
+      let classNameTagLi = document.querySelectorAll('.itens-lista-numeros-extenso');
+
+      for(let index = 0; index < classNameTagLi.length; index += 1) {
+        let armazenandoOsNumerosPorExtenso = classNameTagLi[index];
+
+        if(armazenandoOsNumerosPorExtenso.innerText.includes('nove') || armazenandoOsNumerosPorExtenso.innerText.includes('dez')) {
+          tagUl.removeChild(armazenandoOsNumerosPorExtenso);
+        }
+      };
 
     </script>
   </body>
