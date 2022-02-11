@@ -57,7 +57,65 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+      /* 1 */
+      let tagBody = document.querySelector('body');
+      let tagH1 = document.createElement('h1').innerText = 'Exercício 5.2 - JavaScript DOM';
+      tagBody.appendChild(tagH1);
+
+      /* 2 */
+      let tagMain = document.createElement('main');
+      tagMain.className = "main-content";
+      tagBody.appendChild(tagMain);
+
+      /* 3 */
+      let mainClass = document.getElementsByClassName('main-content');
+      let tagSection = document.createElement('section');
+      tagMain.appendChild(tagSection);
+
+      /* 4 */
+      let tagP = document.createElement('p');
+      tagP.innerText = "Espero que esteja certo!";
+      tagSection.appendChild(tagP);
+
+      /* 5 */
+      let tagSection2 = document.createElement('section');
+      tagSection2.className = "left-content";
+      tagMain.appendChild(tagSection2);
+
+      /* 6 */
+      let tagSection3 = document.createElement('section');
+      tagSection3.className = "right-content";
+      tagMain.appendChild(tagSection3);
+
+      /* 7 */
+      let tagImg = document.createElement('img');
+      tagImg.src = "https://picsum.photos/200";
+      tagImg.className = "small-image";
+      let recieveSection2 = document.getElementsByClassName('left-content');
+      recieveSection2.appendChild(tagImg);
+
+      /* 8 */
+      let numerosPorExtenso = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+      let tagUl = document.createElement('ul');
+      tagSection3.appendChild(tagUl);
+      for(let index = 0; index < numerosPorExtenso.length; index += 1) {
+        let numero = numerosPorExtenso[index];
+        let tagLi = document.createElement('li');
+        tagLi.innerText = numero;
+
+        tagUl.appendChild(tagLi);
+      };
+
+      /* 9 */
+      for(let index = 0; index < 3; index += 1) {
+        let tagH3 = document.createElement('h3');
+        tagMain.appendChild(tagH3);
+      };
+
+      console.log(tagBody);
+
+
     </script>
   </body>
 </html>
