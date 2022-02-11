@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      /* parte 1 */
+
+      /* 1 */
+      let tagBody = document.querySelector('body');
+      let tagH1 = document.createElement('h1');
+      tagH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      tagBody.appendChild(tagH1);
+
+      /* 2 */
+      let tagMain = document.createElement('main');
+      tagMain.className = "main-content";
+      tagBody.appendChild(tagMain);
+
+      /* 3 */
+      let mainClass = document.getElementsByClassName('main-content');
+      let tagSection = document.createElement('section');
+      tagSection.className = "center-content";
+      tagMain.appendChild(tagSection);
+
+      /* 4 */
+      let tagP = document.createElement('p');
+      tagP.innerText = "Espero que esteja certo!";
+      tagSection.appendChild(tagP);
+
+      /* 5 */
+      let tagSection2 = document.createElement('section');
+      tagSection2.className = "left-content";
+      tagMain.appendChild(tagSection2);
+
+      /* 6 */
+      let tagSection3 = document.createElement('section');
+      tagSection3.className = "right-content";
+      tagMain.appendChild(tagSection3);
+
+      /* 7 */
+      let tagImg = document.createElement('img');
+      tagImg.src = "https://picsum.photos/200";
+      tagImg.className = "small-image";
+      let recieveSection2 = document.querySelector('.left-content');
+      recieveSection2.appendChild(tagImg);
+
+      /* 8 */
+      let numerosPorExtenso = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+      let tagUl = document.createElement('ul');
+      tagSection3.appendChild(tagUl);
+
+      for(let index = 0; index < numerosPorExtenso.length; index += 1) {
+        let numero = numerosPorExtenso[index];
+        let tagLi = document.createElement('li');
+        tagLi.className = 'itens-lista-numeros-extenso';
+        tagLi.innerText = numero;
+
+        tagUl.appendChild(tagLi);
+      };
+
+      /* 9 */
+      for(let index = 0; index < 3; index += 1) {
+        let tagH3 = document.createElement('h3');
+        tagMain.appendChild(tagH3);
+      };
+
+      /* parte 2 */
+
+      /* 1 */
+      tagH1.className = 'title';
+
+      /* 2 */
+      let recuperandoAtagH3 = document.getElementsByTagName('h3');
+      recuperandoAtagH3.className = 'description';
+
+      /* 3 */
+      // tagMain.removeChild(tagSection2);
+
+      /* 4 */
+      tagSection3.style.marginRight = 'auto';
+
+      /* 5 */
+      tagSection.style.backgroundColor = 'green';
+
+      /* 6 */
+      
+      let classNameTagLi = document.querySelectorAll('.itens-lista-numeros-extenso');
+
+      for(let index = 0; index < classNameTagLi.length; index += 1) {
+        let armazenandoOsNumerosPorExtenso = classNameTagLi[index];
+
+        if(armazenandoOsNumerosPorExtenso.innerText.includes('nove') || armazenandoOsNumerosPorExtenso.innerText.includes('dez')) {
+          tagUl.removeChild(armazenandoOsNumerosPorExtenso);
+        }
+      };
+
+    </script>
+  </body>
+</html>
