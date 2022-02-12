@@ -1,4 +1,4 @@
-// switch -- case 1:
+// switch -- case
 
 let sinalTransito = 'verde';
 
@@ -6,7 +6,7 @@ switch (sinalTransito) {
 	case 'vermelho':
 		console.log('Pare');
 		break;
-	case 'Amarelo':
+	case 'amarelo':
 		console.log('Atenção');
 		break;
 	case 'verde':
@@ -23,17 +23,18 @@ switch (sinalTransito) {
 
 */
 
-// let nota;
+let notaProcessoSeletivo = 'aprovado';
 
-// switch (nota) {
-//   case 1
-// }
-
-// if (notaPessoaCandidata >= 80) {
-//   console.log("Parabéns, você foi aprovada(o)!");
-// } 
-// else if ( notaPessoaCandidata < 80 && notaPessoaCandidata >= 60) {
-//   console.log("Você está na nossa lista de espera");
-// }
-// else {
-//   console.log("Você foi reprovada(o)");
+switch (notaProcessoSeletivo) {
+  case 'aprovado':
+		console.log("Parabéns, você foi aprovada(o)!");
+		break;
+	case 'lista':
+		console.log("Você está na nossa lista de espera");
+		break;
+	case 'reprovada':
+		console.log("Você foi reprovada(o)");
+		break;
+	default:
+		console.log("não se aplica");
+};

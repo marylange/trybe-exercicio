@@ -22,7 +22,7 @@
 
 */
 
-let notaPessoaCandidata = 30;
+const notaPessoaCandidata = 70;
 
 if (notaPessoaCandidata >= 80) {
   console.log("Parabéns, você foi aprovada(o)!");

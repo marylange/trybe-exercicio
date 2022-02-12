@@ -3,7 +3,7 @@
 const bebidaPrincipal =  'água de coco';
 const bebidaAlternativa = 'suco de laranja';
 
-if (bebidaPrincipal === 'cafezinho' || bebidaAlternativa === 'suco de laranja') {
+if (bebidaPrincipal === 'água de coco' || bebidaAlternativa === 'suco de uva') {
   console.log("Obrigado por me atender :D")
 } else {
   console.log("Ei, eu não pedi isso!");

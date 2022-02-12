@@ -23,6 +23,7 @@ const arroz = true;
 const feijao = true;
 
 const listaDeCompras = cenouras && leite && arroz && feijao;
+console.log(listaDeCompras);
 
 console.log(true && true); // true
 console.log(true && false); // false
@@ -50,7 +51,7 @@ console.log(false && false); // false
   Agora imprima a variável message fora das suas condições.
 */
 
-const currentHour = 12;
+const currentHour = 4;
 let message = '';
 
 if (currentHour >= 22) {
