@@ -1,13 +1,9 @@
-let teste = 5;
+let number = 5;
 
-switch (teste) {
-  case 5:
-    console.log('positive');
-    break;
-  case 3:
-    console.log('negative');
-    break;
-  
-  default:
-    console.log('zero');
+if(number > 0) {
+  console.log('positivo');
+} else if (number < 0) {
+  console.log('negativo');
+} else {
+  console.log('zero');
 }

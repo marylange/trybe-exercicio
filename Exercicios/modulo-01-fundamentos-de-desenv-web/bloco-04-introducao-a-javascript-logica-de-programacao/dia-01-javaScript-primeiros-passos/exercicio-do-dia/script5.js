@@ -1,11 +1,15 @@
-let ladoA = 60;
-let ladoB = 60;
-let ladoC = 60;
+let ladoA = 50;
+let ladoB = 40;
+let ladoC = -10;
 
-let result = ladoA + ladoB + ladoC;
+let resultado = ladoA + ladoB + ladoC;
 
-if(result === 180) {
+
+
+if(resultado === 180 && resultado > 0) {
   console.log(true);
-} else {
+} else if (resultado !== 180 && resultado > 0) {
   console.log(false);
-} 
+} else  {
+  console.log('Inválido');
+}
