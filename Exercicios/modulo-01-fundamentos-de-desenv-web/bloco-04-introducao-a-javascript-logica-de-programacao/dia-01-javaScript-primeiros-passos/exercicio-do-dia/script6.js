@@ -1,4 +1,4 @@
-let pecasDeXadrez = 'dama'.toLowerCase();
+let pecasDeXadrez = 'Cavalo'.toLowerCase();
 
 switch(pecasDeXadrez) {
   case 'rei':
@@ -19,6 +19,8 @@ switch(pecasDeXadrez) {
   case 'peões':
     console.log("O Peão é uma peça menor do xadrez ocidental. No início de uma partida, cada jogador tem oito peças que são dispostas nas fileiras 2 para as brancas e 7 para as pretas.");
     break;
+  default:
+    console.log("Peça desconhecida");
 };
 
 
