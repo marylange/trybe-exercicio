@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Element Object</h1>
+<h2>The nodeValue Property</h2>
+
+<p>Click the button get the node value of the first button element in the document.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p><strong>Note:</strong> Text inside elements are considered to be text nodes, so we return the node value of the button element's first child (childNodes[0]).</p>
+
+<p id="demo">dddddd</p>
+
+
+<script>
+var c = document.querySelector('#demo');
+function myFunction() {
+ 
+  c.style.display = 'none';
+  c.style.display = '';
+
+  // document.getElementById("demo").innerHTML = x;
+  // console.log(document.getElementById("demo"));
+}
+
+function visibility() {
+  c.style.visibility = 'hidden';
+}
+c.addEventListener('click', myFunction);
+c.addEventListener('click', visibility);
+</script>
+
+</body>
+</html>

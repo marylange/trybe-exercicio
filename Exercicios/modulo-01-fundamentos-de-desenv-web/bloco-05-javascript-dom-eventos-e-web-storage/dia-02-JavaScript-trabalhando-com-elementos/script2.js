@@ -1,25 +1,25 @@
-// let ingredientsItems = [
-//   '500 de feijão carioquinha cozido', 
-//   '200g de toucinho',
-//   '1 concha de óleo',
-//   '1 cebola média picada',
-//   '4 dentes de alho',
-//   '1 colher de sopa de sal com alho',
-//   'Cheiro verde a gosto',
-//   '200g de farinha de mandioca'
-// ];
-//                                   // importante verificar o seletor, se é lista ou 
-// let ingredientsList = document.querySelector('.ingredients-list'); // ul
-// console.log(ingredientsList);
-//                           // array of ingredients
-// for(let index = 0; index < ingredientsItems.length; index += 1) {
-//   let ingredient = ingredientsItems[index]; // ingredient atual
+let ingredientsItems = [
+  '500 de feijão carioquinha cozido', 
+  '200g de toucinho',
+  '1 concha de óleo',
+  '1 cebola média picada',
+  '4 dentes de alho',
+  '1 colher de sopa de sal com alho',
+  'Cheiro verde a gosto',
+  '200g de farinha de mandioca'
+];
+                                  // importante verificar o seletor, se é lista ou unitário
+let ingredientsList = document.querySelector('.ingredients-list'); // ul
+console.log(ingredientsList);
+                          // array of ingredients
+for(let index = 0; index < ingredientsItems.length; index += 1) {
+  let ingredient = ingredientsItems[index]; // ingredient atual
   
-//   let ingredientNewListLi = document.createElement('li'); // li
-//   ingredientNewListLi.innerText = ingredient;
+  let ingredientNewListLi = document.createElement('li'); // li
+  ingredientNewListLi.innerText = ingredient;
 
-//   ingredientsList.appendChild(ingredientNewListLi);
-// };
+  ingredientsList.appendChild(ingredientNewListLi);
+};
 
 /*
   E a prática? Aqui!
