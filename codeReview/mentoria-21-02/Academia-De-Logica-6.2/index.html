@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hotel Trybe</title>
+</head>
+<body>
+  <header class="header-trybe">
+    <img src="https://remotar.com.br/wp-content/uploads/2020/10/Trybe-200x200.jpg">
+    <h1>Hotel Trybe</h1>
+  </header>
+  <form>
+    <section class="hotel-form">
+      <input type="date" class="inputCheckin">
+      <input type="date" class="inputCheckout">
+    </section>
+
+    <section class="hotel-form">
+      <p>Quartos:</p>
+      <input type="radio" class="bedroom" name="quarto-hotel">
+      <label>Comum</label>
+      <input type="radio" class="bedroom" name="quarto-hotel">
+      <label>Club</label>
+      <input type="radio" class="bedroom" name="quarto-hotel">
+      <label>Lux</label>
+    </section>
+    
+    <section class="hotel-form">
+      <p>Pessoas: </p>
+      <select>
+        <option value="" class="nPessoas">GGGGGGGGG</option>
+        <option value="" class="nPessoas"></option>
+        <option value="" class="nPessoas"></option>
+        <option value="" class="nPessoas"></option>
+      </select>
+    </section>
+  
+    <section class="hotel-form">
+      <textarea class="obs" placeholder="Deixe uma observação"></textarea>
+    </section>
+
+    <input type="button" value="Reservar" id="submit-btn">
+  </form>
+  <section class="list-section">
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
