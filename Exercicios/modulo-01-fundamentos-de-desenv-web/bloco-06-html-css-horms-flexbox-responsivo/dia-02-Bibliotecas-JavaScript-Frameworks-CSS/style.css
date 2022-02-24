@@ -1,0 +1,13 @@
+.container {
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: rosybrown;
+}
+
+form, header {
+  border: 2px solid gray;
+  margin: 10px;
+  background-color: lightseagreen;
+}
