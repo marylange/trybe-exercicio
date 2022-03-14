@@ -3,14 +3,20 @@
 // com for 
 
 const arrayNumber = [22, 12, 45, 10, 4, 34];
-let armazenador = 0;
+let maior = 0;
 
-for (let i = 0; i < arrayNumber.length; i += 1) {
-  if(arrayNumber[0] > arrayNumber[1]){
-    armazenador = arrayNumber[i];
+for (var i = 0; i < arrayNumber.length; i += 1) {
+  if ( arrayNumber[i] > maior ) {
+     maior = arrayNumber[i];
+    }
   }
 
-  console.log(armazenador)
-}
+// console.log(maior);
 
-console.log(armazenador);
+
+// com reduce
+const arrayNumber2 = [22, 12, 45, 10, 4, 34];
+
+const bigNumber = arrayNumber2.reduce((acc, curr) => acc > curr ? acc : curr);
+
+console.log(bigNumber);
