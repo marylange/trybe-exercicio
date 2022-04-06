@@ -18,7 +18,7 @@ const questionsAndAnswer = (gabarito, respEstudante, callback) => {
     for(let j = 0; j < respEstudante.length; j += 1) {
       if(gabarito[i] === respEstudante[j]) {
         console.log(contagem);
-        contagem = contagem + 1;
+        contagem += 1;
       } else if (gabarito[i] !== respEstudante[j]) {
         contagem = contagem + 0.5;
       } else {
