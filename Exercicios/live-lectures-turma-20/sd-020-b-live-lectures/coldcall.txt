@@ -1,0 +1,28 @@
+Elementos
+
+body
+
+header
+h1 - casa de cambio
+
+main
+label - "digite a moeda"
+input - onde a pessoa escreve o nome da moeda
+button - "pesquisar"
+
+h2 - "valores.."
+
+Lista
+li 
+
+COMPORTAMENTOS
+
+- Quando digita uma moeda (input) e aperto no botao (button) aparece os itens da minha lista (ul - li)
+
+- O valor que é digitado no input também aparece no h2.
+
+- Se digitar algo que não existe, temos o EUR como default
+
+
+
+
