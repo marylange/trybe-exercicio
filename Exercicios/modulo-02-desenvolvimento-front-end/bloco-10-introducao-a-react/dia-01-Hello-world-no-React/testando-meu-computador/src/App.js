@@ -37,7 +37,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      <h2>{Teste}</h2>
+      <Teste />
       <img src={logo} className='App-logo' />
     </div>
   );
