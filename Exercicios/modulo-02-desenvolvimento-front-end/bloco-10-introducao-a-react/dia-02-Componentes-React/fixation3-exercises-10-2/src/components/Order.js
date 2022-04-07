@@ -12,7 +12,7 @@ class Order extends React.Component {
         <p> Email: {product.user} </p>
         <p>Produto: {product.product} </p>
         <p> Preço: {product.price.value} {product.price.currency}</p>
-      <hr />
+        <hr />
       </div>
     );
   }
